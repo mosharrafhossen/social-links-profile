@@ -1,0 +1,126 @@
+/* =====================
+   Google Font
+===================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* =====================
+   CSS Reset
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================
+   Variables (Style Guide)
+===================== */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+/* =====================
+   Body (Mobile First)
+===================== */
+body {
+  min-height: 100vh;
+  background-color: var(--grey-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  padding: 24px;
+}
+
+/* =====================
+   Card
+===================== */
+.card {
+  width: 100%;
+  max-width: 375px; /* Mobile width */
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+/* =====================
+   Avatar
+===================== */
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+/* =====================
+   Text
+===================== */
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 24px;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+/* =====================
+   Links
+===================== */
+.links a {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: 8px; 
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Hover & Focus (Accessibility) */
+.links a:hover,
+.links a:focus {
+  background-color: var(--green);
+  color: var(--grey-900);
+  outline: none;
+}
+
+/* =====================
+   Desktop (1440px)
+===================== */
+@media (min-width: 1440px) {
+  .card {
+    max-width: 384px;
+    padding: 32px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .links a {
+    padding: 15px;
+  }
+}
